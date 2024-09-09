@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Users</h1>
+    </header>
+    <div class="container">
+        <h2>User List</h2>
+        <ul>
+            <% users.forEach(user => { %>
+                <li>
+                    <h3><%= user.username %></h3>
+                    <p>Email: <%= user.email %></p>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>
