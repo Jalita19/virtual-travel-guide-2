@@ -95,3 +95,38 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.destination-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.destination-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+}
+.destination-card a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.destination-card a:hover {
+    color: #388e3c; /* Darker green on hover */
+    text-decoration: underline; /* Underline the text */
+}
+.destination-card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.destination-card img:hover {
+    transform: scale(1.1); /* Zooms in the image on hover */
+}
