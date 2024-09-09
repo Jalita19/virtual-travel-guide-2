@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Travel Guide</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Virtual Travel Guide</h1>
+    </header>
+    <div class="container">
+        <h2>Destinations</h2>
+        <% destinations.forEach(destination => { %>
+            <div class="destination-card">
+                <h2><%= destination.name %></h2>
+                <img src="<%= destination.image %>" alt="<%= destination.name %>">
+                <p><%= destination.description %></p>
+                <a href="/destination/<%= destination.id %>">View Details</a>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>
